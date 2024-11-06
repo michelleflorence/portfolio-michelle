@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", serif;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Makes the navbar overlay on top */
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  width: 90%;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #cdb9e0, #caacea);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  background: linear-gradient(to right, #45005e, #c30065);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #250032 !important;
+}
+
+button.btn.btn-primary {
+  width: 146px;
+  height: 40px;
+  background: linear-gradient(to right, #65558f, #bf23c7);
+  padding: 8px 16px;
+  border-radius: 100px;
+  color: #ffff;
+  border: 0;
+
+  .linkedin-btn-text {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+/* About Section styling */
+.about-section {
+  background-image: url("../assets/background-header-about.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #2e062b;
+  padding: 120px 64px 40px 64px;
+
+  .image-container img {
+    width: 100%;
+    max-width: 484px;
+    border-radius: 100px;
+    margin-right: 20px;
+  }
+
+  .text-container {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .text-container .text-title {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right, #45005e, #c30065);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .bio {
+    font-size: 24px;
+  }
+}
+
+/* Responsive styling for tablet devices (max-width: 1280px) */
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar-container {
+    padding: 10px;
+  }
+
+  .navbar-portfolio {
+    width: 95%;
+    padding: 8px 20px;
+  }
+
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #2e062b;
+
+    .image-container img {
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    .text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-container .text-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .description p {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .bio {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar-container {
+    padding: 10px;
+  }
+
+  .navbar-portfolio {
+    width: 95%;
+    padding: 8px 20px;
+  }
+
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 40px 40px 40px;
+    gap: 20px;
+
+    .image-container img {
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 30px;
+    }
+
+    .text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-container .text-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    .description p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .bio {
+      font-size: 16px;
+    }
+  }
+
+}
