@@ -55,10 +55,21 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   -webkit-text-fill-color: transparent;
 }
 
+.navbar-brand:hover {
+  background: linear-gradient(to right, #600b7c, #e726a0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .navbar-light .navbar-nav .nav-link {
   margin: 0 15px;
   text-decoration: none;
   color: #250032 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #600b7c !important;
 }
 
 .linkedin-btn {
@@ -267,6 +278,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
               margin-bottom: 20px;
             }
 
+            .card-title:hover {
+              background: linear-gradient(to right, #600b7c, #e726a0);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
             .card-text {
               color: #270035;
               font-size: 16px;
@@ -325,6 +343,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
               margin-bottom: 20px;
+            }
+
+            .card-title:hover {
+              background: linear-gradient(to right, #600b7c, #e726a0);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
 
             .card-text {
@@ -422,6 +447,10 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
           font-weight: bold;
           color: #5f3189;
           margin: 0;
+        }
+
+        .card-title:hover {
+          color: #421b66;
         }
 
         .material-icons {

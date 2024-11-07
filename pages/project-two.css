@@ -178,6 +178,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     margin-bottom: 40px;
 
     .button-back {
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -195,7 +196,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
       .button-back-text {
         color: #fff;
-        text-decoration: none;
         font-size: 16px;
       }
     }
