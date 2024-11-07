@@ -580,11 +580,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        padding: 6px;
+        padding: 4px;
+        width: 80px;
 
         .material-icons {
           margin-right: 8px;
-          font-size: 16px;
+          font-size: 14px;
         }
 
         .button-back-text {

@@ -84,7 +84,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 /* Header Section */
 .header-section {
-  background-image: url("../assets/project-one/background-header-project-one.png");
+  background-image: url("../assets/project-three/background-header-project-three.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -139,7 +139,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
 
       .button-link {
-        width: 140px;
+        width: 160px;
         height: 40px;
         color: #fff;
         background-color: #cb5050;
@@ -162,7 +162,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 /* Project Details Section */
 .project-details-section {
-  background-image: url("../assets/project-one/background-project-details-section.png");
+  background-image: url("../assets/project-three/background-project-details-section.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -246,7 +246,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #9459d4, #bca7d8);
+          background: linear-gradient(to right, #80868a, #4c62b0);
           border: 0;
           border-radius: 100px;
           padding: 8px;
@@ -542,8 +542,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
 
       .button-container {
-        gap: 20px;
-        width: 100%;
+        gap: 10px;
+        width: 115%;
 
         .button-demo {
           .button-demo-text {
@@ -562,7 +562,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
   /* Project Details Section */
   .project-details-section {
-    background-image: url("../assets/project-one/background-project-details-section-mobile.png");
+    background-image: url("../assets/project-three/background-project-details-section-mobile.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -592,7 +592,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
           font-size: 14px;
         }
       }
-      
+
       .title-text {
         text-align: center;
         font-weight: bold;
