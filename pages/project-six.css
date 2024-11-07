@@ -150,7 +150,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
 
       .button-link {
-        width: 160px;
+        width: 140px;
         height: 40px;
         color: #fff;
         background-color: #cb5050;
@@ -558,12 +558,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         width: 115%;
 
         .button-demo {
+          width: 120px;
           .button-demo-text {
             font-size: 14px;
           }
         }
 
         .button-link {
+          width: 120px;
           .button-link-text {
             font-size: 14px;
           }
