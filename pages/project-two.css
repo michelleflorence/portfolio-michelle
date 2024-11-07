@@ -170,6 +170,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   align-items: center;
   justify-content: flex-start;
   padding: 96px 64px;
+  height: 100vh;
 
   .header-container {
     display: flex;
@@ -246,7 +247,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #F3BA00, #2C418D);
+          background: linear-gradient(to right, #f3ba00, #2c418d);
           border: 0;
           border-radius: 100px;
           padding: 8px;
