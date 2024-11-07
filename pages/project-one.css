@@ -619,6 +619,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
         .text-content-subtitle {
           font-size: 14px !important;
+          text-align: left;
           margin-bottom: 16px;
         }
 
