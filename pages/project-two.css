@@ -170,7 +170,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   align-items: center;
   justify-content: flex-start;
   padding: 96px 64px;
-  /* height: 100vh; */
 
   .header-container {
     display: flex;
