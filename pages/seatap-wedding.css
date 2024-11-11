@@ -95,7 +95,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 /* Header Section */
 .header-section {
-  background-image: url("../assets/project-two/background-header-project-two.png");
+  background-image: url("../assets/seatap-wedding/background-header-project.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -173,7 +173,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
 /* Project Details Section */
 .project-details-section {
-  background-image: url("../assets/project-two/background-project-details-section.png");
+  background-image: url("../assets/seatap-wedding/background-project-details-section.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -257,7 +257,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #f3ba00, #2c418d);
+          background: linear-gradient(to right, #9459d4, #bca7d8);
           border: 0;
           border-radius: 100px;
           padding: 8px;
@@ -573,7 +573,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
   /* Project Details Section */
   .project-details-section {
-    background-image: url("../assets/project-two/background-project-details-section-mobile.png");
+    background-image: url("../assets/seatap-wedding/background-project-details-section-mobile.png");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -666,6 +666,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     display: flex;
     justify-content: center;
     padding: 20px 40px;
+    height: 100%;
 
     .footer-container {
       display: flex;
