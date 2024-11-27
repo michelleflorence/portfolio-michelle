@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-container">
         <header>
             <div class="navbar-container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" data-aos="fade-down">
                     <a class="navbar-brand" href="index.html">Michelle Florence</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +48,10 @@
         </header>
 
         <section id="about" class="about-section">
-            <div class="image-container">
+            <div class="image-container" data-aos="fade-right">
                 <img src="assets/profile-image.png" alt="Profile Photo">
             </div>
-            <div class="text-container">
+            <div class="text-container" data-aos="fade-left">
                 <h2 class="text-title">FRONT-END DEVELOPER & UI/UX ENTHUSIAST</h2>
                 <div class="description">
                     <p>Creating Seamless and Engaging Digital Experiences</p>
@@ -64,7 +65,7 @@
         <section id="experience" class="experience-section">
             <h2 class="title-text">Work Experiences</h2>
             <div class="experience-card-container">
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-body">
                         <h5 class="card-title">Front End Developer</h5>
                         <h6 class="card-subtitle-one">AUTOMA, 2024</h6>
@@ -73,7 +74,7 @@
                             platform using React JS.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-body">
                         <h5 class="card-title">Full-Stack Developer</h5>
                         <h6 class="card-subtitle-one">BOOTCAMP WGS, 2023</h6>
@@ -83,7 +84,7 @@
                             back-end.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-body">
                         <h5 class="card-title">UI/UX Designer</h5>
                         <h6 class="card-subtitle-one">VISTEK, 2022</h6>
@@ -101,7 +102,7 @@
 
             <div class="projects-card-container">
                 <div class="projects-card-container-row-one">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/automa-background-image-projects.png"
                             alt="Card image cap">
                         <a href="pages/company-profile.html" style="text-decoration: none;">
@@ -119,7 +120,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/injourney-flight-emission-project.png"
                             alt="Card image cap">
                         <a href="pages/flight-emission.html" style="text-decoration: none;">
@@ -136,7 +137,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/automa-live-monitoring-image-projects.png"
                             alt="Card image cap">
                         <a href="pages/live-monitoring.html" style="text-decoration: none;">
@@ -156,7 +157,7 @@
                     </div>
                 </div>
                 <div class="projects-card-container-row-two">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/sales-app-image-projects.png" alt="Card image cap">
                         <a href="pages/sales-app.html" style="text-decoration: none;">
                             <div class="card-body">
@@ -173,7 +174,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/e-learning-gbi-KA-image-projects.png"
                             alt="Card image cap">
                         <div class="card-body">
@@ -191,7 +192,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in">
                         <img class="card-img-top" src="assets/seatap-wedding-invitation-image-projects.png"
                             alt="Card image cap">
                         <div class="card-body">
@@ -223,7 +224,7 @@
             <span class="subtitle-text-two">Looking forward to connecting with you!</span>
 
             <div class="contact-card-container">
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <a href="https://www.instagram.com/michelleflorence/" style="text-decoration: none;">
                         <div class="card-title-container">
                             <img src="assets/instagram-icon.png" alt="instagram-icon" class="instagram-icon">
@@ -234,7 +235,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <a href="mailto:michelleflorence86@gmail.com" style="text-decoration: none;">
                         <div class="card-title-container">
                             <img src="assets/mail-icon.png" alt="mail-icon" class="instagram-icon">
@@ -245,7 +246,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="flip-left">
                     <a href="https://www.linkedin.com/in/michelle-florence/" style="text-decoration: none;">
                         <div class="card-title-container">
                             <img src="assets/linkedin-icon.png" alt="linkedin-icon" class="instagram-icon">
@@ -270,6 +271,34 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Durasi animasi dalam milidetik
+            easing: 'ease-in-out', // Efek transisi
+            once: true, // Animasi hanya berjalan sekali saat scroll
+        });
+    </script>
+    <script>
+        // Smooth scrolling for navbar links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault(); // Mencegah aksi default klik
+
+                // Ambil elemen target berdasarkan atribut href
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                // Scroll ke elemen target dengan efek smooth
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
