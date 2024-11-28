@@ -417,14 +417,15 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
       &:nth-child(2) {
         border-radius: 0;
+        border-left: 1px solid #5f3189;
+      }
+
+      &:nth-child(3) {
+        border-left: 1px solid #5f3189;
       }
 
       &:last-child {
         border-radius: 0 50px 50px 0; /* Hanya kanan atas dan kanan bawah yang ada border-radius */
-      }
-
-      &:not(:last-child) {
-        border-right: 1px solid #5f3189;
       }
 
       .card-title-container {
@@ -748,14 +749,15 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
         &:nth-child(2) {
           border-radius: 0;
+          border-left: 1px solid #5f3189;
+        }
+
+        &:nth-child(3) {
+          border-left: 1px solid #5f3189;
         }
 
         &:last-child {
           border-radius: 0 20px 20px 0; /* Hanya kanan atas dan kanan bawah yang ada border-radius */
-        }
-
-        &:not(:last-child) {
-          border-right: 1px solid #5f3189;
         }
 
         .card-title-container {
@@ -1066,15 +1068,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 
         &:nth-child(2) {
           border-radius: 0;
+          border-top: 1px solid #5f3189;
+          border-left: 0;
+        }
+
+        &:nth-child(3) {
+          border-top: 1px solid #5f3189;
+          border-left: 0;
         }
 
         &:last-child {
           border-radius: 0 0 20px 20px;
-        }
-
-        &:not(:last-child) {
-          border-bottom: 1px solid #5f3189;
-          border-right: 0;
         }
 
         .card-title-container {
