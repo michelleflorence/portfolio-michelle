@@ -257,7 +257,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #141F25, #80868A);
+          background: linear-gradient(to right, #141f25, #80868a);
           border: 0;
           border-radius: 100px;
           padding: 8px;
@@ -275,10 +275,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       width: 100%;
       max-width: 700px;
       height: 100%;
+      cursor: pointer;
     }
   }
 }
 
+/* Footer Section */
 .footer-section {
   display: flex;
   justify-content: center;
@@ -315,7 +317,61 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
   }
 }
 
-/* Responsive styling for tablet devices (max-width: 992px) */
+/* Modal Custom */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: rgba(0, 0, 0, 0.7); /* Background semi transparan */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-dialog {
+    max-width: 800px !important;
+  }
+
+  .modal-content {
+    position: relative !important;
+    width: 800px !important;
+    border-radius: 30px !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .modal-content img {
+    width: 800px;
+    height: auto;
+  }
+
+  #caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #333;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
 @media (max-width: 992px) {
   /* Navbar */
   .navbar-light .navbar-nav .nav-link .active {
@@ -438,6 +494,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     }
   }
 
+  /* Footer Section */
   .footer-section {
     .footer-container {
       .footer-brand {
@@ -451,9 +508,27 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
     }
   }
+
+  /* Modal Custom */
+  .modal {
+    .modal-dialog {
+      max-width: 600px !important;
+    }
+
+    .modal-content {
+      width: 600px !important;
+      border-radius: 20px !important;
+    }
+
+    .modal-content img {
+      width: 600px;
+      height: auto;
+    }
+  }
 }
 
 @media (max-width: 1280px) {
+  /* Project Detals Section */
   .project-details-section {
     display: flex;
     flex-direction: column;
@@ -663,6 +738,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     }
   }
 
+  /* Footer Section */
   .footer-section {
     display: flex;
     justify-content: center;
@@ -688,6 +764,23 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         font-size: 14px;
         font-weight: bold;
       }
+    }
+  }
+
+  /* Modal Custom */
+  .modal {
+    .modal-dialog {
+      max-width: 100% !important;
+    }
+
+    .modal-content {
+      width: 100% !important;
+      border-radius: 20px !important;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
     }
   }
 }
