@@ -305,6 +305,74 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       display: flex;
       flex-direction: row;
       gap: 40px;
+      margin-bottom: 40px;
+
+      .card {
+        width: 100%;
+        border-radius: 50px;
+        border: 0;
+        background-color: #fff;
+        padding: 40px 30px;
+
+        .card-img-top {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .card-body {
+          background-color: #efdcfa;
+          border-radius: 10px;
+          padding: 20px 20px;
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+
+          .material-icons {
+            color: #9f0767;
+            margin-left: 20px;
+          }
+
+          .card-text-container {
+            display: flex;
+            flex-direction: column;
+
+            .card-title {
+              font-size: 20px;
+              font-weight: bold;
+              background: linear-gradient(to right, #3e0651, #9f0767);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              margin-bottom: 20px;
+            }
+
+            .card-title:hover {
+              background: linear-gradient(to right, #600b7c, #e726a0);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            .card-text {
+              color: #270035;
+              font-size: 16px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+
+            .card-subtitle {
+              color: #270035;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .projects-card-container-row-three {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
 
       .card {
         width: 100%;
@@ -680,6 +748,51 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         display: flex;
         flex-direction: column;
         gap: 40px;
+        margin-bottom: 40px;
+
+        .card {
+          width: 100%;
+
+          .card-img-top {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .card-body {
+            border-radius: 10px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .card-text-container {
+              display: flex;
+              flex-direction: column;
+
+              .card-title {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+
+              .card-text {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+
+              .card-subtitle {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .projects-card-container-row-three {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
 
         .card {
           width: 100%;
@@ -987,6 +1100,53 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
 
       .projects-card-container-row-two {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 40px;
+
+        .card {
+          width: 100%;
+          padding: 20px 20px;
+          border-radius: 30px;
+
+          .card-img-top {
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .card-body {
+            border-radius: 10px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .card-text-container {
+              display: flex;
+              flex-direction: column;
+
+              .card-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+
+              .card-text {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 20px;
+              }
+
+              .card-subtitle {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .projects-card-container-row-three {
         display: flex;
         flex-direction: column;
         gap: 40px;

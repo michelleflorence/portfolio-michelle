@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Michelle Florence | Project Automa Live Monitoring Dashboard</title>
-    <link rel="stylesheet" href="live-monitoring.css">
+    <title>Portfolio - Michelle Florence | Project Weather Application</title>
+    <link rel="stylesheet" href="weather-application.css">
     <link rel="icon" type="image/svg+xml" href="../assets/logo.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -49,11 +49,16 @@
 
         <section class="header-section">
             <div class="card" data-aos="fade-up">
-                <h5 class="card-title">Automa Live Monitoring Dashboard</h5>
+                <h5 class="card-title">Weather Application</h5>
                 <div class="button-container">
                     <button class="button-demo">
-                        <a href="https://drive.google.com/file/d/1YWGmQGFa7Z0crNcfcM9twXhl649zdUQq/view?usp=sharing"
-                            class="button-demo-text" target="_blank">Watch Demo</a>
+                        <a href="https://weather-app-michelle.vercel.app/" class="button-demo-text" target="_blank">Live
+                            Demo</a>
+                    </button>
+                    <button class="button-link">
+                        <a href="https://github.com/michelleflorence/weather-app" class="button-link-text"
+                            target="_blank">Github
+                            Repository</a>
                     </button>
                 </div>
             </div>
@@ -76,18 +81,12 @@
 
             <div class="content-container" data-aos="fade-up">
                 <div class="text-content-container">
-                    <h3 class="text-content-title">Automa Live Monitoring Dashboard: Simplifying Real-Time Fleet
-                        Tracking
+                    <h3 class="text-content-title">Weather Application: Smart Weather Tracker
                     </h3>
-                    <p class="text-content-subtitle">The Automa Live Monitoring Dashboard makes it easy to track and
-                        monitor fleets in real-time. With live updates, you can
-                        stay on top of fleet movements, and the playback feature lets you revisit delivery routes
-                        through interactive video
-                        simulations. You can also filter and view statuses based on specific fleets or orders for a more
-                        focused experience.
-                        Built using React JS, this project combines functionality with a clean, user-friendly interface
-                        designed from Figma
-                        prototypes, ensuring a seamless experience.
+                    <p class="text-content-subtitle">In this project, I developed a weather application using React.js, powered by the Visual Crossing Weather API. The
+                    application provides real-time weather updates, including temperature, humidity, and weather conditions for any
+                    location. Users can search for specific cities and view detailed forecasts for the upcoming days. The design is
+                    responsive and optimized for both desktop and mobile users, making weather tracking easy and accessible.
                     </p>
                     <div class="badge-container">
                         <button class="badge-one">
@@ -101,8 +100,8 @@
                         </button>
                     </div>
                 </div>
-                <img class="project-img" src="../assets/live-monitoring/project-details-image.png"
-                    alt="live-monitoring-details-image" data-toggle="modal" data-target="#projectImageModal"
+                <img class="project-img" src="../assets/weather-application/project-details-image.png"
+                    alt="weather-application-details-image" data-toggle="modal" data-target="#projectImageModal"
                     onclick="openModal(this)">
             </div>
         </section>
@@ -137,7 +136,7 @@
         }
 
         AOS.init({
-            duration: 1000, 
+            duration: 1000,
             easing: 'ease-in-out',
             once: true, // Animasi hanya berjalan sekali saat scroll
         });
