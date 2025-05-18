@@ -258,7 +258,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #2F438B, #c0921f);
+          background: linear-gradient(to right, #2f438b, #c0921f);
           border: 0;
           border-radius: 100px;
           padding: 8px;
@@ -493,7 +493,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
       }
     }
   }
-  
+
   /* Footer Section */
   .footer-section {
     .footer-container {

@@ -258,7 +258,7 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
         .badge-one,
         .badge-two,
         .badge-three {
-          background: linear-gradient(to right, #8275A1, #C89B99);
+          background: linear-gradient(to right, #8275a1, #c89b99);
           border: 0;
           border-radius: 100px;
           padding: 8px;
