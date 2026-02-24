@@ -9,23 +9,52 @@ export type ProjectCardProps = {
   label: string;
   date: string;
   link: string;
+  tech: string[];
 };
 
-const ProjectCard = ({ image, title, label, date, link }: ProjectCardProps) => {
+const ProjectCard = ({
+  image,
+  title,
+  label,
+  date,
+  link,
+  tech,
+}: ProjectCardProps) => {
   return (
     <div className={styles["card"]} data-aos="zoom-in">
       <img src={image} className={styles["card-img-top"]} />
 
       <div className={styles["card-body"]}>
-        <div className={styles["card-text-container"]}>
-          <h5 className={styles["card-title"]}>{title}</h5>
-          <p className={styles["card-category"]}>{label}</p>
-          <h6 className={styles["card-date"]}>{date}</h6>
-        </div>
+        <div className={styles["content"]}>
+          <div className={styles["card-text-container"]}>
+            <Link
+              to={link}
+              className={styles["card-title"]}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {title}
+            </Link>
+            <p className={styles["card-category"]}>{label}</p>
+            <h6 className={styles["card-date"]}>{date}</h6>
+          </div>
 
-        <Link to={link} className={styles["arrow"]}>
-          <ArrowRight />
-        </Link>
+          <Link
+            to={link}
+            className={styles["arrow"]}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ArrowRight />
+          </Link>
+        </div>
+        <div className={styles["badge-container"]}>
+          {tech.map((t, i) => (
+            <div key={i} className={styles.badge}>
+              {t}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

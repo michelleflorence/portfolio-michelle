@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../tab.module.scss";
 import ProjectCard from "@/components/card/projects/project-card";
-import { uiuxProject } from "@/utils/helper";
+import { allProject } from "@/utils/helper";
 import Pagination from "@/components/pagination/pagination";
 
 const UIUXTab = () => {
@@ -10,6 +10,9 @@ const UIUXTab = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const uiuxProject = allProject.filter(
+    (project) => project.category === "uiux",
+  );
   const currentItems = uiuxProject.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
@@ -23,7 +26,8 @@ const UIUXTab = () => {
       <div className={styles["pagination-container"]}>
         <p>
           Showing {indexOfFirstItem + 1} to{" "}
-          {Math.min(indexOfLastItem, uiuxProject.length)} of {uiuxProject.length}
+          {Math.min(indexOfLastItem, uiuxProject.length)} of{" "}
+          {uiuxProject.length}
         </p>
         <Pagination
           currentPage={currentPage}

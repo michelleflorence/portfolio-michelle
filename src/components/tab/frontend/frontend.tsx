@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../tab.module.scss";
 import ProjectCard from "@/components/card/projects/project-card";
-import { frontendProject } from "@/utils/helper";
+import { allProject } from "@/utils/helper";
 import Pagination from "@/components/pagination/pagination";
 
 const FrontendTab = () => {
@@ -10,6 +10,9 @@ const FrontendTab = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const frontendProject = allProject.filter(
+    (project) => project.category === "frontend",
+  );
   const currentItems = frontendProject.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
@@ -23,7 +26,8 @@ const FrontendTab = () => {
       <div className={styles["pagination-container"]}>
         <p>
           Showing {indexOfFirstItem + 1} to{" "}
-          {Math.min(indexOfLastItem, frontendProject.length)} of {frontendProject.length}
+          {Math.min(indexOfLastItem, frontendProject.length)} of{" "}
+          {frontendProject.length}
         </p>
         <Pagination
           currentPage={currentPage}

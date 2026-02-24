@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "../tab.module.scss";
 import ProjectCard from "@/components/card/projects/project-card";
-import { fullstackProject } from "@/utils/helper";
+import { allProject } from "@/utils/helper";
 import Pagination from "@/components/pagination/pagination";
 
 const FullstackTab = () => {
@@ -10,7 +10,13 @@ const FullstackTab = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = fullstackProject.slice(indexOfFirstItem, indexOfLastItem);
+  const fullstackProject = allProject.filter(
+    (project) => project.category === "fullstack",
+  );
+  const currentItems = fullstackProject.slice(
+    indexOfFirstItem,
+    indexOfLastItem,
+  );
 
   return (
     <div className={styles["container"]}>
@@ -23,7 +29,8 @@ const FullstackTab = () => {
       <div className={styles["pagination-container"]}>
         <p>
           Showing {indexOfFirstItem + 1} to{" "}
-          {Math.min(indexOfLastItem, fullstackProject.length)} of {fullstackProject.length}
+          {Math.min(indexOfLastItem, fullstackProject.length)} of{" "}
+          {fullstackProject.length}
         </p>
         <Pagination
           currentPage={currentPage}

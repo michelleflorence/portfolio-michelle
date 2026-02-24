@@ -7,53 +7,79 @@
 
   .card-img-top {
     width: 100%;
+    height: auto;
     margin-bottom: 20px;
+    border-radius: 20px;
   }
 
   .card-body {
-    background-color: #F2F5F7;
     border-radius: 10px;
-    padding: 20px 20px;
+    padding: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 
-    .arrow {
-      color: #1E33DF;
-      margin-left: 20px;
-    }
-
-    .card-text-container {
+    .content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
 
-      .card-title {
-        font-size: 20px;
-        font-weight: bold;
-        background: linear-gradient(to right, #1F0AD8, #1A87ED);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-bottom: 20px;
+      .arrow {
+        color: #1e33df;
       }
 
-      .card-title:hover {
-        background: linear-gradient(to right, #4130d4, #429aec);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+      .card-text-container {
+        display: flex;
+        flex-direction: column;
 
-      .card-category {
-        color: #2A2A2A;
-        font-size: 16px;
-        font-weight: bold;
-        margin-bottom: 20px;
-      }
+        .card-title {
+          font-size: 20px;
+          font-weight: bold;
+          background: linear-gradient(to right, #1f0ad8, #1a87ed);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          margin-bottom: 12px;
+          cursor: pointer;
+        }
 
-      .card-date {
-        color: #2A2A2A;
+        .card-title:hover {
+          background: linear-gradient(to right, #4130d4, #429aec);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .card-category {
+          color: #2a2a2a;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 12px;
+        }
+
+        .card-date {
+          color: #2a2a2a;
+          font-size: 12px;
+        }
+      }
+    }
+    .badge-container {
+      margin-top: 20px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+
+      .badge {
+        display: flex;
+        padding: 5px 12px;
+        border-radius: 999px;
         font-size: 12px;
+        font-weight: 600;
+
+        background: rgba(59, 74, 204, 0.08);
+        color: #3b4acc;
+
+        backdrop-filter: blur(4px);
       }
     }
   }
@@ -70,29 +96,30 @@
 
     .card-body {
       border-radius: 10px;
-      padding: 20px 20px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       width: 100%;
 
-      .card-text-container {
-        display: flex;
-        flex-direction: column;
+      .content {
+        .card-text-container {
+          display: flex;
+          flex-direction: column;
 
-        .card-title {
-          font-size: 20px;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
+          .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
 
-        .card-category {
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
+          .card-category {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
 
-        .card-date {
-          font-size: 12px;
+          .card-date {
+            font-size: 12px;
+          }
         }
       }
     }
@@ -112,29 +139,30 @@
 
     .card-body {
       border-radius: 10px;
-      padding: 20px 20px;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       width: 100%;
 
-      .card-text-container {
-        display: flex;
-        flex-direction: column;
+      .content {
+        .card-text-container {
+          display: flex;
+          flex-direction: column;
 
-        .card-title {
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
+          .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
 
-        .card-category {
-          font-size: 14px;
-          font-weight: bold;
-          margin-bottom: 20px;
-        }
+          .card-category {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
 
-        .card-date {
-          font-size: 12px;
+          .card-date {
+            font-size: 12px;
+          }
         }
       }
     }
