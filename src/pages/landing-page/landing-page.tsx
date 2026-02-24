@@ -1,7 +1,23 @@
+import ExperienceCard from "@/components/card/experience/experience-card";
 import styles from "./landing-page.module.scss";
 import profilePhoto from "@/assets/landing-page/about/profile-image.png";
+import { experiences } from "@/utils/helper";
+import TabMenu from "@/components/tab/tab";
+import AllTab from "@/components/tab/all/all";
+import FrontendTab from "@/components/tab/frontend/frontend";
+import UIUXTab from "@/components/tab/uiux/uiux";
+import FullstackTab from "@/components/tab/fullstack/fullstack";
 
 const Home = () => {
+  // const ITEMS_PER_PAGE = 9;
+  // const [currentPage] = useState(1);
+
+  // const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  // const paginatedProjects = projects.slice(
+  //   startIndex,
+  //   startIndex + ITEMS_PER_PAGE,
+  // );
+
   return (
     <>
       <section id="about" className={styles["about-section"]}>
@@ -26,50 +42,29 @@ const Home = () => {
       <section id="experience" className={styles["experience-section"]}>
         <h2 className={styles["title-text"]}>Work Experiences</h2>
         <div className={styles["experience-card-container"]}>
-          <div className={styles["card"]} data-aos="fade-up">
-            <div className={styles["card-body"]}>
-              <h5 className={styles["card-title"]}>Front-End Engineer</h5>
-              <h6 className={styles["card-subtitle-one"]}>
-                TECHNET VISION, 2025
-              </h6>
-              <h6 className={styles["card-subtitle-two"]}>
-                PT. Technet Vision Indonesia
-              </h6>
-              <p className={styles["card-text"]}>
-                Revamped company profile website and built internal project
-                management system using <strong> React.js</strong> and
-                <strong>SASS/SCSS</strong>.
-              </p>
-            </div>
-          </div>
-          <div className={styles["card"]} data-aos="fade-up">
-            <div className={styles["card-body"]}>
-              <h5 className={styles["card-title"]}>Front-End Engineer</h5>
-              <h6 className={styles["card-subtitle-one"]}>AUTOMA, 2024</h6>
-              <h6 className={styles["card-subtitle-two"]}>
-                PT. Sentra Solusi Automa
-              </h6>
-              <p className={styles["card-text"]}>
-                Developed website UI and handled front-end data for an internal
-                platform using <strong>React.js</strong> and{" "}
-                <strong>SASS/SCSS</strong> for modular styling.
-              </p>
-            </div>
-          </div>
-          <div className={styles["card"]} data-aos="fade-up">
-            <div className={styles["card-body"]}>
-              <h5 className={styles["card-title"]}>UI/UX Designer</h5>
-              <h6 className={styles["card-subtitle-one"]}>VISTEK, 2022</h6>
-              <h6 className={styles["card-subtitle-two"]}>
-                PT. Visi Teguh Kreatif
-              </h6>
-              <p className={styles["card-text"]}>
-                Developed a user-friendly interface that enabled users to
-                understand how to use complex technical products using{" "}
-                <strong>Figma</strong>.
-              </p>
-            </div>
-          </div>
+          {experiences.map((exp, index) => (
+            <ExperienceCard key={index} {...exp} />
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" className={styles["projects-section"]}>
+        <h2 className={styles["title-text"]}>My Recent Projects</h2>
+
+        <div className={styles["projects-card-container"]}>
+          <TabMenu
+            defaultActive="all"
+            tabs={[
+              { key: "all", label: "All Projects", content: <AllTab /> },
+              {
+                key: "frontend",
+                label: "Front-End Development",
+                content: <FrontendTab />,
+              },
+              { key: "uiux", label: "UI/UX Design", content: <UIUXTab /> },
+              { key: "fullstack", label: "Full-Stack Development", content: <FullstackTab /> },
+            ]}
+          />
         </div>
       </section>
     </>

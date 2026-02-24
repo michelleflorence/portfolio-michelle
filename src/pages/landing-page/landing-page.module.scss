@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #2e062b;
+  color: #ffff;
   padding: 120px 64px 40px 64px;
 
   .image-container img {
@@ -26,7 +26,7 @@
     .text-title {
       font-size: 24px;
       font-weight: bold;
-      background: linear-gradient(to right, #45005e, #c30065);
+      background: linear-gradient(to right, #3e6afd, #eaf0ff);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -53,13 +53,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #2e062b;
+  color: #2a2a2a;
   padding: 96px 64px;
 
   .title-text {
     font-size: 56px;
     font-weight: bold;
-    background: linear-gradient(to right, #45005e, #c30065);
+    background: linear-gradient(to right, #1f0ad8, #1a87ed);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -72,276 +72,44 @@
     max-width: 1312px;
     gap: 40px;
     overflow: hidden !important;
-
-    .card {
-      color: #250032;
-      padding: 40px 40px;
-      width: 100%;
-      border-radius: 50px;
-      border: 0;
-      background: linear-gradient(to right, #c4baf4, #d2c5f5, #efc0d4);
-
-      .card-body {
-        .card-title {
-          font-size: 24px;
-          font-weight: bold;
-          background: linear-gradient(to right, #45005e, #c30065);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin-bottom: 20px;
-        }
-
-        .card-subtitle-one {
-          font-size: 20px;
-          color: #250032;
-          font-weight: bold;
-          margin-bottom: 4px;
-        }
-
-        .card-subtitle-two {
-          font-size: 18px;
-          color: #250032;
-          font-weight: bold;
-        }
-
-        .card-text {
-          margin-top: 20px;
-          font-size: 18px;
-          color: #250032;
-        }
-      }
-    }
   }
 }
 
 .projects-section {
-  background-color: #d9d4d3;
-  background-size: cover;
-  background-position: center;
+  background:
+    radial-gradient(
+      circle at 0% 30%,
+      rgba(37, 99, 235, 0.35) 0%,
+      rgba(37, 99, 235, 0.2) 10%,
+      rgba(0, 0, 0, 0) 45%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(37, 99, 235, 0.35) 0%,
+      rgba(37, 99, 235, 0.2) 10%,
+      rgba(0, 0, 0, 0) 45%
+    ),
+    #000;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #2e062b;
+  align-items: stretch;
   padding: 96px 64px;
+  color: #ffff;
 
   .title-text {
     font-size: 56px;
     font-weight: bold;
-    background: linear-gradient(to right, #45005e, #c30065);
+    background: linear-gradient(to right, #3e6afd, #eaf0ff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .projects-card-container {
-    display: flex;
-    flex-direction: column;
-
-    .projects-card-container-row-one {
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-      margin-bottom: 40px;
-
-      .card {
-        width: 100%;
-        border-radius: 50px;
-        border: 0;
-        background-color: #fff;
-        padding: 40px 30px;
-
-        .card-img-top {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .card-body {
-          background-color: #efdcfa;
-          border-radius: 10px;
-          padding: 20px 20px;
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-
-          .material-icons {
-            color: #9f0767;
-            margin-left: 20px;
-          }
-
-          .card-text-container {
-            display: flex;
-            flex-direction: column;
-
-            .card-title {
-              font-size: 20px;
-              font-weight: bold;
-              background: linear-gradient(to right, #3e0651, #9f0767);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              margin-bottom: 20px;
-            }
-
-            .card-title:hover {
-              background: linear-gradient(to right, #600b7c, #e726a0);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-
-            .card-text {
-              color: #270035;
-              font-size: 16px;
-              font-weight: bold;
-              margin-bottom: 20px;
-            }
-
-            .card-subtitle {
-              color: #270035;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-
-    .projects-card-container-row-two {
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-      margin-bottom: 40px;
-
-      .card {
-        width: 100%;
-        border-radius: 50px;
-        border: 0;
-        background-color: #fff;
-        padding: 40px 30px;
-
-        .card-img-top {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .card-body {
-          background-color: #efdcfa;
-          border-radius: 10px;
-          padding: 20px 20px;
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-
-          .material-icons {
-            color: #9f0767;
-            margin-left: 20px;
-          }
-
-          .card-text-container {
-            display: flex;
-            flex-direction: column;
-
-            .card-title {
-              font-size: 20px;
-              font-weight: bold;
-              background: linear-gradient(to right, #3e0651, #9f0767);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              margin-bottom: 20px;
-            }
-
-            .card-title:hover {
-              background: linear-gradient(to right, #600b7c, #e726a0);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-
-            .card-text {
-              color: #270035;
-              font-size: 16px;
-              font-weight: bold;
-              margin-bottom: 20px;
-            }
-
-            .card-subtitle {
-              color: #270035;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
-
-    .projects-card-container-row-three {
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-
-      .card {
-        width: 100%;
-        border-radius: 50px;
-        border: 0;
-        background-color: #fff;
-        padding: 40px 30px;
-
-        .card-img-top {
-          width: 100%;
-          margin-bottom: 20px;
-        }
-
-        .card-body {
-          background-color: #efdcfa;
-          border-radius: 10px;
-          padding: 20px 20px;
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-
-          .material-icons {
-            color: #9f0767;
-            margin-left: 20px;
-          }
-
-          .card-text-container {
-            display: flex;
-            flex-direction: column;
-
-            .card-title {
-              font-size: 20px;
-              font-weight: bold;
-              background: linear-gradient(to right, #3e0651, #9f0767);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              margin-bottom: 20px;
-            }
-
-            .card-title:hover {
-              background: linear-gradient(to right, #600b7c, #e726a0);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            }
-
-            .card-text {
-              color: #270035;
-              font-size: 16px;
-              font-weight: bold;
-              margin-bottom: 20px;
-            }
-
-            .card-subtitle {
-              color: #270035;
-              font-size: 12px;
-            }
-          }
-        }
-      }
-    }
+    display: block;
+    width: 100%;
   }
 }
 
@@ -359,7 +127,7 @@
   .title-text {
     font-size: 56px;
     font-weight: bold;
-    background: linear-gradient(to right, #45005e, #c30065);
+    background: linear-gradient(to right, #1f0ad8, #1a87ed);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -448,7 +216,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: #2e062b;
 
     .text-container {
       width: 100%;
@@ -488,34 +255,6 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-
-      .card {
-        padding: 40px 40px;
-        width: 100%;
-
-        .card-body {
-          .card-title {
-            font-size: 18px;
-            font-weight: bold;
-          }
-
-          .card-subtitle-one {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 4px;
-          }
-
-          .card-subtitle-two {
-            font-size: 16px;
-            font-weight: bold;
-          }
-
-          .card-text {
-            margin-top: 20px;
-            font-size: 16px;
-          }
-        }
-      }
     }
   }
 
@@ -536,138 +275,10 @@
       display: flex;
       flex-direction: column;
 
-      .projects-card-container-row-one {
+      .grid-container {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        margin-bottom: 40px;
-
-        .card {
-          width: 100%;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
-
-      .projects-card-container-row-two {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin-bottom: 40px;
-
-        .card {
-          width: 100%;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
-
-      .projects-card-container-row-three {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        .card {
-          width: 100%;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 20px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
+        gap: 24px;
       }
     }
   }
@@ -792,35 +403,6 @@
       display: flex;
       flex-direction: column;
       gap: 40px;
-
-      .card {
-        padding: 20px 20px;
-        width: 100%;
-        border-radius: 30px;
-
-        .card-body {
-          .card-title {
-            font-size: 16px;
-            font-weight: bold;
-          }
-
-          .card-subtitle-one {
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 4px;
-          }
-
-          .card-subtitle-two {
-            font-size: 14px;
-            font-weight: bold;
-          }
-
-          .card-text {
-            margin-top: 20px;
-            font-size: 14px;
-          }
-        }
-      }
     }
   }
 
@@ -840,146 +422,6 @@
     .projects-card-container {
       display: flex;
       flex-direction: column;
-
-      .projects-card-container-row-one {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin-bottom: 40px;
-
-        .card {
-          width: 100%;
-          padding: 20px 20px;
-          border-radius: 30px;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 14px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
-
-      .projects-card-container-row-two {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        margin-bottom: 40px;
-
-        .card {
-          width: 100%;
-          padding: 20px 20px;
-          border-radius: 30px;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 14px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
-
-      .projects-card-container-row-three {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-
-        .card {
-          width: 100%;
-          padding: 20px 20px;
-          border-radius: 30px;
-
-          .card-img-top {
-            width: 100%;
-            margin-bottom: 20px;
-          }
-
-          .card-body {
-            border-radius: 10px;
-            padding: 20px 20px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-
-            .card-text-container {
-              display: flex;
-              flex-direction: column;
-
-              .card-title {
-                font-size: 16px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-text {
-                font-size: 14px;
-                font-weight: bold;
-                margin-bottom: 20px;
-              }
-
-              .card-subtitle {
-                font-size: 12px;
-              }
-            }
-          }
-        }
-      }
     }
   }
 

@@ -1,0 +1,142 @@
+.card {
+  width: 100%;
+  border-radius: 40px;
+  border: 0;
+  background-color: #fff;
+  padding: 40px 30px;
+
+  .card-img-top {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    background-color: #F2F5F7;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .arrow {
+      color: #1E33DF;
+      margin-left: 20px;
+    }
+
+    .card-text-container {
+      display: flex;
+      flex-direction: column;
+
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        background: linear-gradient(to right, #1F0AD8, #1A87ED);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 20px;
+      }
+
+      .card-title:hover {
+        background: linear-gradient(to right, #4130d4, #429aec);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .card-category {
+        color: #2A2A2A;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .card-date {
+        color: #2A2A2A;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 100%;
+
+    .card-img-top {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card-body {
+      border-radius: 10px;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .card-text-container {
+        display: flex;
+        flex-direction: column;
+
+        .card-title {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .card-category {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .card-date {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: 30px;
+
+    .card-img-top {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .card-body {
+      border-radius: 10px;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .card-text-container {
+        display: flex;
+        flex-direction: column;
+
+        .card-title {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .card-category {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        .card-date {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

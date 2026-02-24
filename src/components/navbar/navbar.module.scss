@@ -15,21 +15,21 @@
   justify-content: space-between;
   padding: 14px 30px;
   border-radius: 30px;
-  background: linear-gradient(to right, #cdb9e0, #caacea);
+  background: linear-gradient(to right, #F2F2F2, #E1E1F6);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
   font-weight: bold;
   font-size: 24px;
-  background: linear-gradient(to right, #45005e, #c30065);
+  background: linear-gradient(to right, #1F0AD8, #1A87ED);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(to right, #600b7c, #e726a0);
+    background: linear-gradient(to right, #4130d4, #429aec);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@
   transition: 0.2s;
 
   &:hover {
-    color: #600b7c;
+    color: #1E33DF;
   }
 }
 

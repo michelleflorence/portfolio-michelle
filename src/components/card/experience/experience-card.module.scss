@@ -1,0 +1,100 @@
+.card {
+  color: #2A2A2A;
+  padding: 40px 40px;
+  width: 100%;
+  border-radius: 40px;
+  border: 0;
+  background: #FFFF;
+
+  .card-body {
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      background: linear-gradient(to right, #1F0AD8, #1A87ED);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
+
+    .card-subtitle-one {
+      font-size: 20px;
+      color: #2A2A2A;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .card-subtitle-two {
+      font-size: 18px;
+      color: #2A2A2A;
+      font-weight: bold;
+    }
+
+    .card-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #2A2A2A;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 40px 40px;
+    width: 100%;
+
+    .card-body {
+      .card-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .card-subtitle-one {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .card-subtitle-two {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .card-text {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 20px 20px;
+    width: 100%;
+    border-radius: 30px;
+
+    .card-body {
+      .card-title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .card-subtitle-one {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      .card-subtitle-two {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      .card-text {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -13,13 +13,13 @@
 }
 
 .color-primary {
-  background: linear-gradient(to right, #65558f, #bf23c7);
+  background: linear-gradient(to right, #1F0AD8, #1A87ED);
   color: #fff;
   text-decoration: none;
   font-size: 16px;
 
   &:hover {
-    background: linear-gradient(to right, #483a69, #6f1674);
+    opacity: 0.8;
   }
 }
 
