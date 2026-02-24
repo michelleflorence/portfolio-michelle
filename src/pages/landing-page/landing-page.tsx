@@ -1,23 +1,15 @@
 import ExperienceCard from "@/components/card/experience/experience-card";
 import styles from "./landing-page.module.scss";
 import profilePhoto from "@/assets/landing-page/about/profile-image.png";
-import { experiences } from "@/utils/helper";
+import { contacts, experiences } from "@/utils/helper";
 import TabMenu from "@/components/tab/tab";
 import AllTab from "@/components/tab/all/all";
 import FrontendTab from "@/components/tab/frontend/frontend";
 import UIUXTab from "@/components/tab/uiux/uiux";
 import FullstackTab from "@/components/tab/fullstack/fullstack";
+import ContactCard from "@/components/card/contact/contact-card";
 
 const Home = () => {
-  // const ITEMS_PER_PAGE = 9;
-  // const [currentPage] = useState(1);
-
-  // const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  // const paginatedProjects = projects.slice(
-  //   startIndex,
-  //   startIndex + ITEMS_PER_PAGE,
-  // );
-
   return (
     <>
       <section id="about" className={styles["about-section"]}>
@@ -62,9 +54,28 @@ const Home = () => {
                 content: <FrontendTab />,
               },
               { key: "uiux", label: "UI/UX Design", content: <UIUXTab /> },
-              { key: "fullstack", label: "Full-Stack Development", content: <FullstackTab /> },
+              {
+                key: "fullstack",
+                label: "Full-Stack Development",
+                content: <FullstackTab />,
+              },
             ]}
           />
+        </div>
+      </section>
+
+      <section className={styles["contact-section"]}>
+        <div className={styles["content"]}>
+          <div className={styles["title-text"]}>THANK YOU!</div>
+          <div className={styles["description"]}>
+            Feel free to reach out to me through any of the methods below.
+            Looking forward to connecting with you!
+          </div>
+          <div className={styles["contact-card-container"]}>
+            {contacts.map((contact, index) => (
+              <ContactCard key={index} {...contact} />
+            ))}
+          </div>
         </div>
       </section>
     </>

@@ -1,0 +1,131 @@
+.card {
+  width: 100%;
+  padding: 20px 40px;
+  gap: 32px;
+  background-color: #ffffff;
+
+  &:first-child {
+    border-radius: 40px 0 0 40px;
+  }
+
+  &:nth-child(2) {
+    border-radius: 0;
+    border-left: 1px solid #7898ff;
+  }
+
+  &:nth-child(3) {
+    border-left: 1px solid #7898ff;
+  }
+
+  &:last-child {
+    border-radius: 0 50px 50px 0;
+  }
+
+  .card-link {
+    .card-title-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 32px;
+
+      .icon {
+        width: 30px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4066e1;
+        margin: 0;
+      }
+
+      .card-title:hover {
+        color: #2b4aaf;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 100%;
+    padding: 20px 30px;
+
+    &:first-child {
+      border-radius: 20px 0 0 20px; /* Hanya kiri atas dan kiri bawah yang ada border-radius */
+    }
+
+    &:nth-child(2) {
+      border-radius: 0;
+      border-left: 1px solid #7898ff;
+    }
+
+    &:nth-child(3) {
+      border-left: 1px solid #7898ff;
+    }
+
+    &:last-child {
+      border-radius: 0 20px 20px 0; /* Hanya kanan atas dan kanan bawah yang ada border-radius */
+    }
+
+    .card-link {
+      .card-title-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .card-title {
+          font-size: 18px;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    padding: 20px 40px;
+
+    &:first-child {
+      border-radius: 20px 20px 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0;
+      border-top: 1px solid #7898ff;
+      border-left: 0;
+    }
+
+    &:nth-child(3) {
+      border-top: 1px solid #7898ff;
+      border-left: 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 20px 20px;
+    }
+
+    .card-link {
+      .card-title-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+
+        .card-title {
+          font-size: 16px;
+          font-weight: bold;
+          margin: 0;
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,11 @@ import projectImageAutomaMonitoring from "@/assets/landing-page/projects/automa-
 import projectImageSalesApp from "@/assets/landing-page/projects/sales-app-image-projects.png";
 import projectImageElearning from "@/assets/landing-page/projects/e-learning-gbi-KA-image-projects.png";
 import projectImageSeatap from "@/assets/landing-page/projects/seatap-wedding-invitation-image-projects.png";
+
+import iconMail from "@/assets/icon/mail-icon.png";
+import iconInstagram from "@/assets/icon/instagram-icon.png";
+import iconLinkedin from "@/assets/icon/linkedin-icon.png";
+
 import type { ProjectCardProps } from "@/components/card/projects/project-card";
 
 export const experiences = [
@@ -192,3 +197,21 @@ export const allProject: ProjectCardProps[] = [
     tech: ["Figma"],
   },
 ];
+
+export const contacts = [
+    {
+      title: "Email",
+      link: "mailto:michelleflorence86@gmail.com",
+      iconSrc: iconMail,
+    },
+    {
+      title: "Instagram",
+      link: "https://www.instagram.com/michelleflorence/",
+      iconSrc: iconInstagram,
+    },
+    {
+      title: "Linkedin",
+      link: "https://www.linkedin.com/in/michelle-florence/",
+      iconSrc: iconLinkedin,
+    },
+  ];
