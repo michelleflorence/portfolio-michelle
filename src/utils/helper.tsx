@@ -130,7 +130,7 @@ export const allProject: ProjectCardProps[] = [
     label: "Front-End Development",
     date: "Dec 2024 - Feb 2025",
     image: projectImageAutomaRevamp,
-    link: "https://drive.google.com/file/d/1YWGmQGFa7Z0crNcfcM9twXhl649zdUQq/view?usp=sharing",
+    link: "https://drive.google.com/file/d/19Z3HtJP1h0hA8McvI-vVUUThwmoCc3F1/view?usp=sharing",
     tech: ["Javascript", "React", "HTML & CSS"],
   },
   {

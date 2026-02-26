@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import styles from "./project-card.module.scss";
 import { Link } from "react-router-dom";
 
@@ -45,7 +45,7 @@ const ProjectCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <ArrowRight />
+            <ArrowUpRight />
           </Link>
         </div>
         <div className={styles["badge-container"]}>
