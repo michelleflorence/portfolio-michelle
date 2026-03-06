@@ -1,14 +1,19 @@
-import projectImageIPET from "@/assets/landing-page/projects/ipet-compro-background-image-projects.png";
-
-import projectImageAutomaRevamp from "@/assets/landing-page/projects/automa-revamp-background-image-projects.png";
-import projectImageDrivero from "@/assets/landing-page/projects/drivero-image-projects.png";
-import projectImageAutomaCompro from "@/assets/landing-page/projects/automa-compro-background-image-projects.png";
-import projectImageInjourney from "@/assets/landing-page/projects/injourney-flight-emission-project.png";
-import projectImageAutomaMonitoring from "@/assets/landing-page/projects/automa-live-monitoring-image-projects.png";
-import projectImageSalesApp from "@/assets/landing-page/projects/sales-app-image-projects.png";
-import projectImageElearning from "@/assets/landing-page/projects/e-learning-gbi-KA-image-projects.png";
-import projectImageSeatap from "@/assets/landing-page/projects/seatap-wedding-invitation-image-projects.png";
-
+import projectImageWednesday from "@/assets/landing-page/projects/wednesday-project-image.png";
+import projectImageLensiro from "@/assets/landing-page/projects/lensiro-voucher-project-image.png";
+import projectImageClinovate from "@/assets/landing-page/projects/clinovate-greenapp-project-image.png";
+import projectImagePOB from "@/assets/landing-page/projects/pob-project-image.png";
+import projectImageBumi from "@/assets/landing-page/projects/bumi-project-image.png";
+import projectImageMedilink from "@/assets/landing-page/projects/medilink-project-image.png";
+import projectImageTVICompro from "@/assets/landing-page/projects/tvi-compro-project-image.png";
+import projectImageUBSGold from "@/assets/landing-page/projects/ubs-gold-project-image.png";
+import projectImageAutomaRevamp from "@/assets/landing-page/projects/automa-revamp-project-image.png";
+import projectImageDrivero from "@/assets/landing-page/projects/drivero-project-image.png";
+import projectImageAutomaCompro from "@/assets/landing-page/projects/automa-compro-project-image.png";
+import projectImageInjourney from "@/assets/landing-page/projects/injourney-flight-emission-project-image.png";
+import projectImageAutomaMonitoring from "@/assets/landing-page/projects/automa-live-monitoring-project-image.png";
+import projectImageSalesApp from "@/assets/landing-page/projects/sales-app-project-image.png";
+import projectImageElearning from "@/assets/landing-page/projects/e-learning-gbi-KA-project-image.png";
+import projectImageSeatap from "@/assets/landing-page/projects/seatap-wedding-project-image.png";
 import iconMail from "@/assets/icon/mail-icon.png";
 import iconInstagram from "@/assets/icon/instagram-icon.png";
 import iconLinkedin from "@/assets/icon/linkedin-icon.png";
@@ -57,25 +62,25 @@ export const allProject: ProjectCardProps[] = [
     category: "frontend",
     label: "Front-End Development",
     date: "December 2025 - Present",
-    image: projectImageIPET,
+    image: projectImageWednesday,
     link: "https://wednesday.rhemasis.com/",
-    tech: ["Typescript", "React", "HTML & CSS"],
+    tech: ["Typescript", "React + Vite", "MUI Joy"],
   },
   {
     title: "Clinovate Company Profile",
     category: "frontend",
     label: "Front-End Development",
     date: "Jan 2026 - March 2026",
-    image: projectImageIPET,
+    image: projectImageClinovate,
     link: "https://clinovate-greenapp.netlify.app/",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React + Vite", "SASS/SCSS"],
   },
   {
     title: "Lensiro Voucher & Promotion",
     category: "uiux",
     label: "UI/UX Design",
     date: "September 2025 - November 2025",
-    image: projectImageIPET,
+    image: projectImageLensiro,
     link: "https://www.figma.com/design/YH6eC84wwensaq6fNgTiLO/Lensiro-Voucher---Promo?node-id=181-42173&t=9A3FQLnXwu8GsRAG-1",
     tech: ["Figma"],
   },
@@ -84,25 +89,25 @@ export const allProject: ProjectCardProps[] = [
     category: "frontend",
     label: "Front-End Development",
     date: "August 2025 - November 2025",
-    image: projectImageIPET,
-    link: "/projects/pob-dashboard",
-    tech: ["Typescript", "React", "HTML & CSS"],
+    image: projectImagePOB,
+    link: "https://drive.google.com/file/d/1gxrURFI0QNclk4UlZGnPG_3hj6GQPii7/view?usp=sharing",
+    tech: ["Typescript", "React + Vite", "SASS/SCSS"],
   },
   {
-    title: "Crypto AI Chatbot",
+    title: "Digital Card Bumi",
     category: "frontend",
     label: "Front-End Development",
     date: "June 2025 - Aug 2025",
-    image: projectImageIPET,
-    link: "https://chatbot.rhemasis.com/",
-    tech: ["Typescript", "React", "HTML & CSS"],
+    image: projectImageBumi,
+    link: "https://businesscard.bumiresources.com/",
+    tech: ["Typescript", "Next.js", "Mantine UI"],
   },
   {
     title: "Medilink Consultation",
     category: "uiux",
     label: "UI/UX Design",
     date: "May 2025 - June 2025",
-    image: projectImageIPET,
+    image: projectImageMedilink,
     link: "https://www.figma.com/design/C1JBt2gi32wqhbbfMSSWts/MediLink---Sismedika?t=PriHSgapu3VuXS2o-1",
     tech: ["Figma"],
   },
@@ -111,16 +116,16 @@ export const allProject: ProjectCardProps[] = [
     category: "frontend",
     label: "Front-End Development",
     date: "April 2025 - May 2025",
-    image: projectImageIPET,
+    image: projectImageTVICompro,
     link: "https://technetvision.com/",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React + Vite", "SASS/SCSS"],
   },
   {
     title: "IT Support Dashboard",
     category: "uiux",
     label: "UI/UX Design",
     date: "Feb 2025 - March 2025",
-    image: projectImageIPET,
+    image: projectImageUBSGold,
     link: "https://www.figma.com/proto/TPn6m5BEBBwcO9JSKcruh7/UI-Ticketing-IT-Hardware?node-id=1-2&p=f&t=8Gv0mgy1pMLeM458-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
     tech: ["Figma"],
   },
@@ -131,7 +136,7 @@ export const allProject: ProjectCardProps[] = [
     date: "Dec 2024 - Feb 2025",
     image: projectImageAutomaRevamp,
     link: "https://drive.google.com/file/d/19Z3HtJP1h0hA8McvI-vVUUThwmoCc3F1/view?usp=sharing",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React + Vite", "SASS/SCSS"],
   },
   {
     title: "Drivero Maintenance App",
@@ -149,7 +154,7 @@ export const allProject: ProjectCardProps[] = [
     date: "August 2024 - November 2024",
     image: projectImageAutomaCompro,
     link: "https://automa-compro.vercel.app/",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React", "SASS/SCSS"],
   },
   {
     title: "Injourney Flight Emission",
@@ -158,7 +163,7 @@ export const allProject: ProjectCardProps[] = [
     date: "June 2024 - July 2024",
     image: projectImageInjourney,
     link: "https://automa-flight-emission.vercel.app/",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React", "SASS/SCSS"],
   },
   {
     title: "Automa Monitoring",
@@ -167,7 +172,7 @@ export const allProject: ProjectCardProps[] = [
     date: "May 2024 - July 2024",
     image: projectImageAutomaMonitoring,
     link: "https://drive.google.com/file/d/1YWGmQGFa7Z0crNcfcM9twXhl649zdUQq/view?usp=sharing",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React", "SASS/SCSS"],
   },
   {
     title: "Dua Putri Sales App",
@@ -176,7 +181,7 @@ export const allProject: ProjectCardProps[] = [
     date: "November 2023 - January 2024",
     image: projectImageSalesApp,
     link: "https://sales-app-duaputri.vercel.app/",
-    tech: ["Javascript", "React", "HTML & CSS"],
+    tech: ["Javascript", "React", "Express.js", "PostgreSQL"],
   },
   {
     title: "GBI KA E-learning Platform",
@@ -199,19 +204,19 @@ export const allProject: ProjectCardProps[] = [
 ];
 
 export const contacts = [
-    {
-      title: "Email",
-      link: "mailto:michelleflorence86@gmail.com",
-      iconSrc: iconMail,
-    },
-    {
-      title: "Instagram",
-      link: "https://www.instagram.com/michelleflorence/",
-      iconSrc: iconInstagram,
-    },
-    {
-      title: "Linkedin",
-      link: "https://www.linkedin.com/in/michelle-florence/",
-      iconSrc: iconLinkedin,
-    },
-  ];
+  {
+    title: "Email",
+    link: "mailto:michelleflorence86@gmail.com",
+    iconSrc: iconMail,
+  },
+  {
+    title: "Instagram",
+    link: "https://www.instagram.com/michelleflorence/",
+    iconSrc: iconInstagram,
+  },
+  {
+    title: "Linkedin",
+    link: "https://www.linkedin.com/in/michelle-florence/",
+    iconSrc: iconLinkedin,
+  },
+];
