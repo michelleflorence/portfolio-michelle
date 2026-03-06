@@ -108,7 +108,7 @@ export const allProject: ProjectCardProps[] = [
     label: "UI/UX Design",
     date: "May 2025 - June 2025",
     image: projectImageMedilink,
-    link: "https://www.figma.com/design/C1JBt2gi32wqhbbfMSSWts/MediLink---Sismedika?t=PriHSgapu3VuXS2o-1",
+    link: "https://www.figma.com/proto/C1JBt2gi32wqhbbfMSSWts/MediLink---Sismedika?node-id=5-82&p=f&t=OOJ7E5eR00EA0umJ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A82",
     tech: ["Figma"],
   },
   {
@@ -126,7 +126,7 @@ export const allProject: ProjectCardProps[] = [
     label: "UI/UX Design",
     date: "Feb 2025 - March 2025",
     image: projectImageUBSGold,
-    link: "https://www.figma.com/proto/TPn6m5BEBBwcO9JSKcruh7/UI-Ticketing-IT-Hardware?node-id=1-2&p=f&t=8Gv0mgy1pMLeM458-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+    link: "https://www.figma.com/proto/TPn6m5BEBBwcO9JSKcruh7/UI-Ticketing-IT-Hardware?node-id=1-2&p=f&t=8Gv0mgy1pMLeM458-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
     tech: ["Figma"],
   },
   {
@@ -144,7 +144,7 @@ export const allProject: ProjectCardProps[] = [
     label: "UI/UX Design",
     date: "December 2024 - January 2025",
     image: projectImageDrivero,
-    link: "https://www.figma.com/design/o2SUCOyrlMWJsHJJAEOtDj/Drivero-Persona?node-id=0-1&t=xkET6PRivY6CcD61-1",
+    link: "https://www.figma.com/proto/o2SUCOyrlMWJsHJJAEOtDj/Drivero-Persona?node-id=132-3459&t=UCTB94bJolevZkFk-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=132%3A3459",
     tech: ["Figma"],
   },
   {
